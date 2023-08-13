@@ -8,17 +8,16 @@
 
 ---
 
-## Installation
-To install `bug_bounty_bonanza`, use pip with the following command:
+## Running the Server
+To run `bug_bounty_bonanza`, clone with the following command:
 
 ```bash
-pip install git+https://github.com/eyaltrabelsi/bug_bounty_bonanza.git
+git clone https://github.com/eyaltrabelsi/bug_bounty_bonanza.git
 ```
 
-## Running the Server
 To serve your application, Run the server using the command (or something fancier):
    ```bash
-   python app.py
+   export FLASK_APP=app.py && flask run & ngrok http 5000
 ```
 
 ## Triggering Events
